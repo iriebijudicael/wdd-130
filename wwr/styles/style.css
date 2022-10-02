@@ -15,6 +15,7 @@ nav a {
     text-decoration: none;
 }  
 .book, .join {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     background-color: #d9c2a3;
     color: black;
@@ -41,6 +42,7 @@ main section img {
     color: rgb(247, 245, 242);
 }
 .msg p {
+    font-family: 'Montserrat', sans-serif;
     padding-bottom: 15px;
 }  
 #content {
