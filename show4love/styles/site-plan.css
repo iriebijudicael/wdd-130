@@ -131,7 +131,7 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
-
+  
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
@@ -140,7 +140,8 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
+  font-family: 'Montserrat', sans-serif;
+  
   text-align: center;
 
 }
