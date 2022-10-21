@@ -91,7 +91,9 @@ main {
 main section img {
     box-sizing: border-box;
 }
-
+h1 {
+    text-align: center;
+}
 .river-card, .camping-time, .qualify-age, .dressing {
     transition: transform .5s;
     box-shadow: 5px 5px 10px #494d40;
