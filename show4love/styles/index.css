@@ -12,11 +12,6 @@ header {
     grid-template-columns: 150px auto;
     border-radius: 15px; 
 }
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
 .logo {
     width: 130px;
     padding-top: 5px;
@@ -26,6 +21,10 @@ nav {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 nav a {
     padding:       35px;
