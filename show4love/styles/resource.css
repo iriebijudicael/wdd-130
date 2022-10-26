@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&family=Rock+Salt&display=swap');
 
 .home-title {
@@ -5,13 +6,11 @@
     font-size: 2em;
     margin-top: 10px;
 }
-header {
-    background-color: rgba(0, 0, 0, 0.582);
-    font-style:'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 150px auto;
-    border-radius: 15px; 
-}
+#content {
+    margin: 0 auto;
+    padding: 0;
+
+} 
 .logo {
     width: 130px;
     padding-top: 5px;
@@ -21,6 +20,20 @@ header {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+}
+body {
+    display: flex;
+    max-width: 1600px;
+    font-family:'Montserrat', sans-serif;
+
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.582);
+    font-style:'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 150px auto;
+    border-radius: 15px; 
 }
 nav {
     display: flex;
@@ -36,7 +49,7 @@ nav a:hover {
     background-color: #ec0d3d;
     color: rgb(255, 255, 255);
 }
-.login {
+.layout {
     background-color: #ec0d3d;
     color: rgb(255, 253, 253);
     text-decoration: none;
@@ -45,7 +58,7 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 5px;
 }
-.login:hover {
+.layout:hover {
     background-color: #118be2;
     color: white;
 }
@@ -61,121 +74,62 @@ nav a:hover {
 }
 #hero {
     display:       grid;
+    grid-template-columns: 1fr 1fr;
     width:         100%;
-    height:         200%;
-    margin-top:    -100px;
+    height:        -100%;
     text-align:    center;
 }
-
 #hero-box {
-    width:       100%;
     grid-column: 1/4;
     grid-row:    1/3;
     z-index:     -1;
 }
 #hero-img {
     width:       100%;
-    margin:         0;
     
 }
 #hero-msg {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: 1fr 1fr;
     font-size: 2em;
     color: #000;
+    padding: 20px 30px;
     grid-column: 2/3;
-    grid-row:    1/3;
-    margin-top:  100px;
+    grid-row:    1;
+}
+#msg  {
+    display:             flex;
+    justify-content:     center;
+    margin-top: 50px;
+    padding:             30px;
+    
 }
 .button-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     text-align: center;
-    justify-items: right;
 }
-body {
-    max-width: 1600px;
-    margin: 0;
-    font-family:'Montserrat', sans-serif;
-    justify-content: center;
-} 
-.section {
-    background-color:  #ec0d3d;
-    display:             flex;
-    justify-content:     space-between;
-    padding:             50px;
-    margin:              8rem auto 0 auto;
-    box-shadow: 5px 5px 10px #118be2;
-}
-.section img {
-    height:     240px;
-}
-.section h2 {
-    margin:       0;
-    color:      #ffffff;
-}
-.section p {
-    color: #ffffff;
-    font-size: 1.1em;
-    gap: 10;
-}
-main {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-    justify-content: center;
-}
-.msg {
-    display:             flex;
-    justify-content:     center;
-    padding:             30px;
-}
-.msg .icon {
-    height: 150px;
-    padding: 80px;
-}
-.msg h2 {
-    background-color: #3f8c84;
-    font-size: 2em;
-    justify-content: center;
-    color:      #ffffff;
-    padding: 50px 10px 10px 10px;
-    text-align: center;
 
-}
-.msg p {
-    font-size: 2em;
-    padding: 40px;
-    margin: 0 auto;
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 15px;
+    margin:  0 auto;
     
 }
-.gift-card, .partner-card, .sponsor-card {
-    margin: auto;
-    margin:     50px 0;
-    text-align: center;
+.section, .text {
+    grid-column: 2/3;
+    grid-row:    5;
 }
+.section, .text2 {
+    grid-column: 1/2;
+    grid-row:    7;
 
-.gift-card {
-    grid-column: 2/4;
-    grid-row: 6;
 }
-.partner-card {
-    grid-column: 5/7;
-    grid-row: 6;
-}
-.sponsor-card {
-    grid-column: 8/10;
-    grid-row:       6;
-}
-.card-img {
-    width: 260px;
-    height: 280px;
-    border:     10px solid #e77528;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #118be2;
-}
-
-.card-img:hover {
-    opacity:   .6;
-    transform: scale(1.1);
+.section p {
+   font-size: 22px;
+   color: #000;
 }
 footer {
     background-color: #3f8c84;
@@ -186,7 +140,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-footer a, footer h3 {
+footer a {
     background-color: #6f7364;
     color: #ffffff;
     text-decoration: none;
@@ -203,7 +157,7 @@ footer .social img {
     padding-top: 15px;
 }
 @media screen and (max-width: 900px) {
-#hero, .home-grid {
+#hero, .container {
     display: block;
     height: auto;
 }
@@ -227,7 +181,7 @@ nav a {
     font-size: 25px;
     color: #6f7364;
 }
-.gift-card, .partner-card, .sponsor-card { 
+.art h2, .carwash h2, .spelling h2, .bake h2, .cooking h2 { 
     margin: 50px auto;
     width: 60%;
 }
